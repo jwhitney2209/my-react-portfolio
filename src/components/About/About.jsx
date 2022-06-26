@@ -12,12 +12,38 @@ const About = () => {
               <figure className="image">
                 <img className="is-rounded" src={headshot} alt="jason" />
               </figure>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus at reiciendis nobis odio excepturi assumenda
-                voluptates sequi quisquam corrupti ducimus aperiam omnis magni,
-                dignissimos neque aliquid laboriosam quas voluptatibus. Quam.
-              </p>
+
+              <div class="field is-grouped is-grouped-multiline">
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-dark">Age</span>
+                    <span class="tag is-info">32</span>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-dark">Pronouns</span>
+                    <span class="tag is-success">He/Him</span>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-dark">Favorite Animal</span>
+                    <span class="tag is-primary">Dog</span>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-dark">Favorite Video Game</span>
+                    <span class="tag is-info">League Of Legends</span>
+                  </div>
+                </div>
+
+              </div>
             </div>
             <div className="column">
               <h2>About Me</h2>
