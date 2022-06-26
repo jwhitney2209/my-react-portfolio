@@ -37,7 +37,7 @@ const Header = () => {
           <p class="subtitle">
             Fullstack Developer
           </p>
-          <Link to="https://drive.google.com/file/d/10KNc_-kTcN9SMV1Tsu54TkSJqzFbcjU5/view?usp=sharing" target="_blank" rel="noreferrer" class="button is-danger">Download CV</Link>
+          <a href="https://drive.google.com/file/d/10KNc_-kTcN9SMV1Tsu54TkSJqzFbcjU5/view?usp=sharing" target="_blank" rel="noreferrer" class="button is-danger">Download CV</a>
           </div>
         </div>
       </section>
