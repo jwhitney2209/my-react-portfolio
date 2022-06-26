@@ -5,6 +5,7 @@ import About from './components/About/About'
 import Footer from './components/Footer/Footer'
 import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
+import Resume from './components/Resume/Resume'
 
 const App = () => {
   return (
@@ -12,10 +13,11 @@ const App = () => {
     <Header />
     <div className='container'>
       <Routes>
-        <Route exact path='/' element={<About />}/>
+        <Route index element={<About />}/>
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/resume' element={<Resume />} />
       </Routes>
     </div>
     <Footer />
