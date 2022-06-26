@@ -6,8 +6,8 @@ const Footer = () => {
       <div class="container has-text-centered">
         <div className='columns is-mobile is-marginless'>
           <div className='column center buttons'>
-            <button class="button is-black">Github</button>
-            <button class="button is-black">LinkedIn</button>
+            <a href="https://github.com/jwhitney2209" target="_blank" rel="noreferrer" class="button is-black">Github</a>
+            <a href="https://www.linkedin.com/in/jwhitney2209/" target="_blank" rel="noreferrer" class="button is-black">LinkedIn</a>
           </div>
         </div>
         <div>
