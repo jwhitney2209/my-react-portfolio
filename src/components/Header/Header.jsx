@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 
+
 const Header = () => {
   function CustomLink({ to, children, ...props }) {
     const resolvedPath = useResolvedPath(to);
@@ -11,11 +12,11 @@ const Header = () => {
   }
   return (
     <div>
-      <nav class="navbar is-black is-fixed-top">
-        <div class="container">
-          <div id="navMenu" class="navbar-menu">
+      <nav className="navbar is-black is-fixed-top">
+        <div className="container">
+          <div id="navMenu" className="navbar-menu">
             <div className='navbar-item'>
-              <div class="buttons">
+              <div className="buttons">
                 <CustomLink to='/about'>About</CustomLink>
                 <CustomLink to='/portfolio'>Portfolio</CustomLink>
                 <CustomLink to='/contact'>Contact</CustomLink>
@@ -25,19 +26,19 @@ const Header = () => {
         </div>
       </nav>
 
-      <section class="hero is-black is-medium-with-navbar">
-        <div class="hero-body">
+      <section className="hero is-black is-medium-with-navbar">
+        <div className="hero-body">
           <div className='container has-text-centered'>
-          <p class="">
+          <p className="">
             Hello I'm
           </p>
-          <p class="title">
+          <p className="title">
             Jason Whitney
           </p>
-          <p class="subtitle">
+          <p className="subtitle">
             Fullstack Developer
           </p>
-          <a href="https://drive.google.com/file/d/10KNc_-kTcN9SMV1Tsu54TkSJqzFbcjU5/view?usp=sharing" target="_blank" rel="noreferrer" class="button is-danger">Download CV</a>
+          <a href="https://drive.google.com/file/d/10KNc_-kTcN9SMV1Tsu54TkSJqzFbcjU5/view?usp=sharing" target="_blank" rel="noreferrer" className="button is-danger">Download CV</a>
           </div>
         </div>
       </section>
