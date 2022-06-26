@@ -9,7 +9,7 @@ const Header = () => {
     return (
       <Link
         to={to}
-        className={`m-1 ${isActive ? "button is-danger is-outlined" : "button is-dark is-outlined"}`}
+        className={`m-1 ${isActive ? "button is-danger is-outlined" : "button is-info is-outlined"}`}
         {...props}
       >
         {children}
@@ -51,10 +51,10 @@ const Header = () => {
           <div className="navbar-start">
             <div className="navbar-item">
               <div className="">
-                <CustomLink to="/about">About</CustomLink>
-                <CustomLink to="/portfolio">Portfolio</CustomLink>
-                <CustomLink to="/contact">Contact</CustomLink>
-                <CustomLink to="/resume">Resume</CustomLink>
+                <CustomLink to="my-react-portfolio/about">About</CustomLink>
+                <CustomLink to="my-react-portfolio/portfolio">Portfolio</CustomLink>
+                <CustomLink to="my-react-portfolio/contact">Contact</CustomLink>
+                <CustomLink to="my-react-portfolio/resume">Resume</CustomLink>
               </div>
             </div>
           </div>

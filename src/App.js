@@ -15,11 +15,11 @@ const App = () => {
       <Header />
         <div className='container'>
       <Routes>
-        <Route path='/' element={<About />}/>
-        <Route path='/about' element={<About />} />
-        <Route path='/portfolio' element={<Portfolio />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/resume' element={<Resume />} />
+        <Route path='my-react-portfolio/' element={<About />}/>
+        <Route path='my-react-portfolio/about' element={<About />} />
+        <Route path='my-react-portfolio/portfolio' element={<Portfolio />} />
+        <Route path='my-react-portfolio/contact' element={<Contact />} />
+        <Route path='my-react-portfolio/resume' element={<Resume />} />
       </Routes>
         </div>
       <Footer />

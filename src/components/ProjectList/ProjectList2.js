@@ -11,17 +11,17 @@ const ProjectList2 = (props) => {
         <div className="card-image">
           <figure className="image is-4by3">
             <img
-              src="https://bulma.io/images/placeholders/1280x960.png"
+              src={ project.img }
               alt="Placeholder"
             />
           </figure>
         </div>
         <div className="card-content">{ project.body }</div>
         <div className="card-footer">
-          <a href={ project.github } className="card-footer-item">
+        <a href={ project.github } className="button m-2 is-fullwidth is-info is-outlined">
             Github
           </a>
-          <a href={ project.deploy } className="card-footer-item">
+          <a href={ project.deploy } className="button m-2 is-fullwidth is-danger is-outlined">
             Deployed
           </a>
         </div>
