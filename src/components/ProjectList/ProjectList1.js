@@ -18,12 +18,16 @@ const ProjectList1 = (props) => {
             <a
               href={project.github}
               className="button m-2 is-fullwidth is-info is-outlined"
+              target="_blank"
+              rel="noreferrer"
             >
               Github
             </a>
             <a
               href={project.deploy}
               className="button m-2 is-fullwidth is-danger is-outlined"
+              target="_blank"
+              rel="noreferrer"
             >
               Deployed
             </a>
