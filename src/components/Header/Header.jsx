@@ -37,7 +37,7 @@ const Header = () => {
           <p class="subtitle">
             Fullstack Developer
           </p>
-          <a href="%PUBLIC_URL%/assets/jwhitney_cv.pdf" target="_blank" rel="noreferrer" class="button is-danger">Download CV</a>
+          <Link to="assets/jwhitney_cv.pdf" target="_blank" rel="noreferrer" class="button is-danger">Download CV</Link>
           </div>
         </div>
       </section>
