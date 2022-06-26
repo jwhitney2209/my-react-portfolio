@@ -1,12 +1,16 @@
 import React from 'react'
+import AnimatePage from '../AnimatePage/AnimatePage'
+
 
 const Portfolio = () => {
   return (
-    <section className='container is-fluid my-2'>
-      <div className='content'>
+    <AnimatePage>
+    <div className='my-4 is-fluid'>
+      <div className=''>
         <h2>Portfolio</h2>
       </div>
-    </section>
+    </div>
+    </AnimatePage>
   )
 }
 

@@ -20,6 +20,7 @@ const Header = () => {
                 <CustomLink to='/about'>About</CustomLink>
                 <CustomLink to='/portfolio'>Portfolio</CustomLink>
                 <CustomLink to='/contact'>Contact</CustomLink>
+                <CustomLink to='/resume'>Resume</CustomLink>
               </div>
             </div>
           </div>

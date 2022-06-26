@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useFormspark } from '@formspark/use-formspark';
 import { validateEmail } from '../../utils/helpers';
+import AnimatePage from '../AnimatePage/AnimatePage';
 
 const FORMSPARK_FORM_ID = "yCPi4Kpp";
 
@@ -43,13 +44,15 @@ const Contact = () => {
   };
 
   return (
-    <form id='contact-form' className='container my-2' onSubmit={onSubmit}>
+    <AnimatePage>
+    <div>
+    <form id='contact-form' className='my-4 is-fluid' onSubmit={onSubmit}>
       <div className='columns'>
         <div className='column'>
-          <div className="">
-            <p className='title is-5'>
+          <div className="content">
+            <h2>
               Contact Me
-            </p>
+            </h2>
             <p className=''>If you'd like to reach out to me and discuss any projects, please fill out the contact form!</p>
           </div>
         </div>
@@ -77,10 +80,12 @@ const Contact = () => {
               <p className='is-danger'>{errorMessage}</p>
             </div>
           )}
-          <button className='button is-black' type='submit' disabled={submitting}>Send</button>
+          <button className='button is-danger' type='submit' disabled={submitting}>Send</button>
         </div>
       </div>
     </form>
+    </div>
+    </AnimatePage>
 
 
   )

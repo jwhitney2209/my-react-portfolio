@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const Footer = () => {
   return (
-    <footer className="footer">
+    <div className="footer">
       <div className="container has-text-centered">
         <div className='columns is-mobile is-marginless'>
           <div className='column center buttons'>
@@ -16,7 +17,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
+    </div>
   )
 }
 
