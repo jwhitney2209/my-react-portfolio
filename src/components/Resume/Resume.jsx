@@ -1,21 +1,29 @@
-import React from 'react'
-import AnimatePage from '../AnimatePage/AnimatePage'
+import React from "react";
+import AnimatePage from "../AnimatePage/AnimatePage";
+import { MdGetApp } from 'react-icons/md';
 
 const Resume = () => {
   return (
     <AnimatePage>
-      <div className='my-4 is-fluid m-4'>
-        <div className='content'>
+      <div className="my-4 is-fluid m-4">
+        <div className="content">
           <h2>Resume</h2>
           <p>Download my resume below</p>
-          <a href="https://drive.google.com/file/d/10KNc_-kTcN9SMV1Tsu54TkSJqzFbcjU5/view?usp=sharing" target="_blank" rel="noreferrer" className="button is-danger">Download CV</a>
+          <a
+            href="https://drive.google.com/file/d/10KNc_-kTcN9SMV1Tsu54TkSJqzFbcjU5/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="button is-danger is-outlined"
+          >
+          <span className="icon"><MdGetApp /></span>
+          <span>Download CV</span>
+          </a>
           <h3>Front-End Proficiencies</h3>
           <h3>Back-End Proficiencies</h3>
         </div>
       </div>
     </AnimatePage>
-    
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;

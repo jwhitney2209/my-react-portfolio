@@ -1,62 +1,35 @@
-import React from 'react'
-import AnimatePage from '../AnimatePage/AnimatePage'
-
+import React, { useState } from "react";
+import AnimatePage from "../AnimatePage/AnimatePage";
+import ProjectList1 from '../ProjectList/ProjectList1'
+import ProjectList2 from "../ProjectList/ProjectList2";
 
 const Portfolio = () => {
+  const [projects1, setProjects1] = useState([
+    { title: 'Project 1', body: 'lorem', github: '', deploy: '', img: '' },
+    { title: 'Project 2', body: 'lorem', github: '', deploy: '', img: '' },
+    { title: 'Project 3', body: 'lorem', github: '', deploy: '', img: '' },
+  ]);
+
+  const [projects2, setProjects2] = useState([
+    { title: 'Project 4', body: 'lorem', github: '', deploy: '', img: '' },
+    { title: 'Project 5', body: 'lorem', github: '', deploy: '', img: '' },
+    { title: 'Project 6', body: 'lorem', github: '', deploy: '', img: '' },
+  ]);
+
   return (
     <AnimatePage>
-    <div className='my-4 is-fluid m-4'>
-      <div className=''>
-        <h2>Portfolio</h2>
-      </div>
-      <div className='columns'>
-        <div className='column'>
-          <div className='card'>
-            <div className='card-header'>
-              <div className='card-header-title'>
-                Project #1
-              </div>
-            </div>
-            <div className='card-image'>
-              <figure className='image is-4by3'>
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder" /> 
-              </figure>
-            </div>
-            <div className='card-content'>
-              Description goes here...
-            </div>
-            <div className='card-footer'>
-              <a href="/" className='card-footer-item'>Github</a>
-              <a href="/" className='card-footer-item'>Deployed</a>
-            </div>
-          </div>
+      <div className="my-4 is-fluid m-4">
+        <div className="content has-text-centered">
+          <h2 className="title">Portfolio</h2>
+          <p className="subtitle">Below you can see my most recent projects.</p>
         </div>
-        <div className='column'>
-          <div className='card'>
-            <div className='card-header'>
-              <div className='card-header-title'>
-                Project #2
-              </div>
-            </div>
-            <div className='card-image'>
-              <figure className='image is-4by3'>
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder" /> 
-              </figure>
-            </div>
-            <div className='card-content'>
-              Description goes here...
-            </div>
-            <div className='card-footer'>
-              <a href="/" className='card-footer-item'>Github</a>
-              <a href="/" className='card-footer-item'>Deployed</a>
-            </div>
-          </div>
+        <div className="columns is-multiline">
+        <ProjectList1 projects={projects1}/>
+        <ProjectList2 projects={projects2} />
         </div>
       </div>
-
-    </div>
     </AnimatePage>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
