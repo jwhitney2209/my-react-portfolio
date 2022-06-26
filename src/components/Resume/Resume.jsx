@@ -4,7 +4,7 @@ import AnimatePage from '../AnimatePage/AnimatePage'
 const Resume = () => {
   return (
     <AnimatePage>
-      <div className='my-4 is-fluid'>
+      <div className='my-4 is-fluid m-4'>
         <div className='content'>
           <h2>Resume</h2>
           <p>Download my resume below</p>

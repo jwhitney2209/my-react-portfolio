@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <AnimatePage>
     <div>
-    <form id='contact-form' className='my-4 is-fluid' onSubmit={onSubmit}>
+    <form id='contact-form' className='my-4 is-fluid m-4' onSubmit={onSubmit}>
       <div className='columns'>
         <div className='column'>
           <div className="content">

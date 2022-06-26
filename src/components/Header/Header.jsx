@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
-
 
 const Header = () => {
   function CustomLink({ to, children, ...props }) {
@@ -10,17 +9,36 @@ const Header = () => {
       <Link to={to} className={isActive ? "button is-danger" : "button is-black"} {...props}>{children}</Link>
     )
   }
+    const [isNavActive, setisNavActive] = useState(false);
   return (
     <div>
       <nav className="navbar is-black is-fixed-top">
         <div className="container">
-          <div id="navMenu" className="navbar-menu">
+          <div className='navbar-brand'>
             <div className='navbar-item'>
-              <div className="buttons">
-                <CustomLink to='/about'>About</CustomLink>
-                <CustomLink to='/portfolio'>Portfolio</CustomLink>
-                <CustomLink to='/contact'>Contact</CustomLink>
-                <CustomLink to='/resume'>Resume</CustomLink>
+              <div onClick={() => {setisNavActive(!isNavActive);
+              }}
+              role='button' 
+              data-target='navMenu' 
+              className={`navbar-burger has-text-centered ${isNavActive ? "is-active center" : ""}`}
+              aria-label="menu"
+              aria-expanded="false"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div id="navMenu" className={`navbar-menu has-text-centered ${isNavActive ? "is-active center" : ""}`}>
+            <div className='navbar-start'>
+              <div className='navbar-item'>
+                <div className="buttons">
+                  <CustomLink to='/about'>About</CustomLink>
+                  <CustomLink to='/portfolio'>Portfolio</CustomLink>
+                  <CustomLink to='/contact'>Contact</CustomLink>
+                  <CustomLink to='/resume'>Resume</CustomLink>
+                </div>
               </div>
             </div>
           </div>

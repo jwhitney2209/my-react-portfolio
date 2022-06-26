@@ -6,7 +6,7 @@ import headshot from '../../assets/jason_thumbsup.png'
 const About = () => {
   return (
     <AnimatePage>
-      <div className='my-4 is-fluid'>
+      <div className='my-4 is-fluid is-mobile m-4'>
         <div className='content'>
           <div className='columns'>
             <div className='column is-one-third'>
