@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,8 +13,10 @@ const Footer = () => {
               rel="noreferrer"
               className="button is-dark is-outlined"
             >
-            <span className='icon'><FaGithub /></span>
-            <span>Github</span>
+              <span className="icon">
+                <FaGithub />
+              </span>
+              <span>Github</span>
             </a>
             <a
               href="https://www.linkedin.com/in/jwhitney2209/"
@@ -22,8 +24,10 @@ const Footer = () => {
               rel="noreferrer"
               className="button is-dark is-outlined"
             >
-            <span className='icon'><FaLinkedin /></span>
-            <span>LinkedIn</span>
+              <span className="icon">
+                <FaLinkedin />
+              </span>
+              <span>LinkedIn</span>
             </a>
             <a
               href="https://twitter.com/teachergamergg"
@@ -31,8 +35,10 @@ const Footer = () => {
               rel="noreferrer"
               className="button is-info is-outlined"
             >
-            <span className='icon'><FaTwitter /></span>
-            <span>Twitter</span>
+              <span className="icon">
+                <FaTwitter />
+              </span>
+              <span>Twitter</span>
             </a>
           </div>
         </div>
