@@ -8,10 +8,18 @@ import thoughts from "../../assets/deepthoughts.png";
 import notes from "../../assets/notetaker.png";
 import food from "../../assets/foodfest.png";
 import event from "../../assets/eventseeker.png";
+import codeit from "../../assets/codeit.png";
 
 const Portfolio = () => {
   // eslint-disable-next-line
   const [projects1, setProjects1] = useState([
+    {
+      title: "Code_It Note Taker",
+      body: "Code_It is a noting-taking app made especially for your code. When you create a note, you can add code snippets and personal notations. You can also edit, delete, and share them at any time. Create folders to set up an organized directory or keep your notes in a random, piled collection. This application was made with GraphQL, React, MongoDB, Express.js, TailwindCSS, and JSX.",
+      github: "https://github.com/jwhitney2209/code-it",
+      deploy: "https://protected-headland-96637.herokuapp.com/",
+      img: codeit,
+    },
     {
       title: "Rate My Playlist",
       body: "An application that lets authorized users share their favorite spotify playlists with the community. Users can favorite the playlists they love the most and the most favorited playlists are displayed on the homepage for all to see!",
