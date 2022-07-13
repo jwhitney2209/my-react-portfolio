@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/my-react-portfolio/static/css/main.f75a3420.css",
-    "main.js": "/my-react-portfolio/static/js/main.bcd052a7.js",
+    "main.js": "/my-react-portfolio/static/js/main.6bf3be6b.js",
     "static/js/787.56d9acf9.chunk.js": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js",
     "static/media/jason_thumbsup.png": "/my-react-portfolio/static/media/jason_thumbsup.6d1a5a82e66283e593f5.png",
     "static/media/foodfest.png": "/my-react-portfolio/static/media/foodfest.6c48f80951f194e71c3e.png",
     "static/media/ratemyplaylist.png": "/my-react-portfolio/static/media/ratemyplaylist.b6305154e3ad6dde4855.png",
+    "static/media/codeit.png": "/my-react-portfolio/static/media/codeit.3f1b7f8538ed2f823a53.png",
     "static/media/eventseeker.png": "/my-react-portfolio/static/media/eventseeker.c7bc13ffc0f88bb84f1a.png",
     "static/media/budgettracker.png": "/my-react-portfolio/static/media/budgettracker.5357e57db8d53cfc1554.png",
     "static/media/deepthoughts.png": "/my-react-portfolio/static/media/deepthoughts.dc6c9aa2877b37769d2a.png",
     "static/media/notetaker.png": "/my-react-portfolio/static/media/notetaker.e7ee730924a4de2f7a7c.png",
     "index.html": "/my-react-portfolio/index.html",
     "main.f75a3420.css.map": "/my-react-portfolio/static/css/main.f75a3420.css.map",
-    "main.bcd052a7.js.map": "/my-react-portfolio/static/js/main.bcd052a7.js.map",
+    "main.6bf3be6b.js.map": "/my-react-portfolio/static/js/main.6bf3be6b.js.map",
     "787.56d9acf9.chunk.js.map": "/my-react-portfolio/static/js/787.56d9acf9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f75a3420.css",
-    "static/js/main.bcd052a7.js"
+    "static/js/main.6bf3be6b.js"
   ]
 }
