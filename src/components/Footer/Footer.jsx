@@ -30,7 +30,7 @@ const Footer = () => {
               <span>LinkedIn</span>
             </a>
             <a
-              href="https://twitter.com/teachergamergg"
+              href="https://twitter.com/jasonnotjson"
               target="_blank"
               rel="noreferrer"
               className="button is-info is-outlined"

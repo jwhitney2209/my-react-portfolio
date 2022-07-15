@@ -49,80 +49,84 @@ const Contact = () => {
 
   return (
     <AnimatePage>
-      <div>
+      <div className="columns">
+        <div className="column m-4 is-half">
+          <div className="content">
+            <h2>Contact Me</h2>
+            <p className="">
+              If you'd like to reach out to me and discuss any projects, please
+              fill out the contact form or email me directly below!
+            </p>
+            <button
+              className="button is-info is-outlined"
+              href="mailto:jason@notjson.com"
+            >
+              Email Me
+            </button>
+          </div>
+        </div>
         <form
           id="contact-form"
-          className="my-4 is-fluid m-4"
+          className="my-4 is-fluid m-4 column"
           onSubmit={onSubmit}
         >
-          <div className="columns">
-            <div className="column">
-              <div className="content">
-                <h2>Contact Me</h2>
-                <p className="">
-                  If you'd like to reach out to me and discuss any projects,
-                  please fill out the contact form!
-                </p>
+          <div className="">
+            <div className="field" action="https://submit-form.com/yCPi4Kpp">
+              <label htmlFor="name" className="label">
+                Name
+              </label>
+              <div className="control">
+                <input
+                  className="input"
+                  type="text"
+                  name="name"
+                  defaultValue={name}
+                  onBlur={handleChange}
+                  required
+                ></input>
               </div>
             </div>
-            <div className="column">
-              <div className="field" action="https://submit-form.com/yCPi4Kpp">
-                <label htmlFor="name" className="label">
-                  Name
-                </label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type="text"
-                    name="name"
-                    defaultValue={name}
-                    onBlur={handleChange}
-                    required
-                  ></input>
-                </div>
+            <div className="field">
+              <label htmlFor="email" className="label">
+                Email
+              </label>
+              <div className="control">
+                <input
+                  className="input"
+                  type="email"
+                  name="email"
+                  defaultValue={email}
+                  onBlur={handleChange}
+                  required
+                ></input>
               </div>
-              <div className="field">
-                <label htmlFor="email" className="label">
-                  Email
-                </label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type="email"
-                    name="email"
-                    defaultValue={email}
-                    onBlur={handleChange}
-                    required
-                  ></input>
-                </div>
-              </div>
-              <div className="field">
-                <label htmlFor="message" className="label">
-                  Message
-                </label>
-                <div className="control">
-                  <textarea
-                    className="textarea"
-                    name="message"
-                    rows="5"
-                    defaultValue={message}
-                    onBlur={handleChange}
-                  ></textarea>
-                </div>
-              </div>
-              {errorMessage && (
-                <div>
-                  <p className="is-danger">{errorMessage}</p>
-                </div>
-              )}
-              <button
-                className="button is-danger"
-                type="submit"
-                disabled={submitting}
-              >
-                Send
-              </button>
             </div>
+            <div className="field">
+              <label htmlFor="message" className="label">
+                Message
+              </label>
+              <div className="control">
+                <textarea
+                  className="textarea"
+                  name="message"
+                  rows="5"
+                  defaultValue={message}
+                  onBlur={handleChange}
+                ></textarea>
+              </div>
+            </div>
+            {errorMessage && (
+              <div>
+                <p className="is-danger">{errorMessage}</p>
+              </div>
+            )}
+            <button
+              className="button is-danger"
+              type="submit"
+              disabled={submitting}
+            >
+              Send
+            </button>
           </div>
         </form>
       </div>
