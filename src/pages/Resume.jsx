@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AnimatePage from "../AnimatePage/AnimatePage";
+import AnimatePage from "../components/AnimatePage/AnimatePage";
 import { MdGetApp } from "react-icons/md";
 
 const Resume = () => {

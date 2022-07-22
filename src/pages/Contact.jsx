@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
-import { validateEmail } from "../../utils/helpers";
-import AnimatePage from "../AnimatePage/AnimatePage";
+import { validateEmail } from "../utils/helpers";
+import AnimatePage from "../components/AnimatePage/AnimatePage";
 
 const FORMSPARK_FORM_ID = "yCPi4Kpp";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import AnimatePage from "../AnimatePage/AnimatePage";
-import headshot from "../../assets/jason_thumbsup.png";
+import AnimatePage from "../components/AnimatePage/AnimatePage";
+import headshot from "../assets/jason_thumbsup.png";
 
 const About = () => {
   return (
